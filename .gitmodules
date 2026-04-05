@@ -1,0 +1,3 @@
+[submodule "SVRP"]
+	path = SVRP
+	url = https://github.com/Zangir/SVRP.git
