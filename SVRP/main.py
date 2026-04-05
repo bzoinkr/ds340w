@@ -45,6 +45,7 @@ def parse_args():
     
     # Other settings
     parser.add_argument('--cuda', action='store_true', help='Use CUDA if available')
+    parser.add_argument('--mps', action='store_true', help='Use MPS (Apple Silicon) if available')
     parser.add_argument('--seed', type=int, default=42, help='Random seed')
     parser.add_argument('--save_dir', type=str, default='checkpoints', help='Directory to save models')
     parser.add_argument('--load_model', type=str, default=None, help='Path to load model from')
@@ -279,7 +280,12 @@ def main():
     np.random.seed(args.seed)
     
     # Determine device
-    device = torch.device('cuda' if args.cuda and torch.cuda.is_available() else 'cpu')
+    if args.cuda and torch.cuda.is_available():
+        device = torch.device('cuda')
+    elif args.mps and torch.backends.mps.is_available():
+        device = torch.device('mps')
+    else:
+        device = torch.device('cpu')
     
     # Set up logger
     logger = setup_logger(args.save_dir)
