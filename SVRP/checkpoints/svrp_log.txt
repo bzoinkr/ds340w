@@ -63,3 +63,68 @@
 2026-04-05 14:31:38,512 [INFO] Instance 5: Cost = 7.4233, Routes = [[5, 0, 0, 0]]
 2026-04-05 14:31:41,909 [INFO] Evaluation completed. Mean reward: -7.0219
 2026-04-05 14:31:41,910 [INFO] Final evaluation - Mean reward: -7.0219
+2026-04-05 14:36:30,841 [INFO] Starting SVRP-RL with Namespace(num_nodes=20, num_vehicles=1, capacity=50.0, a_ratio=0.6, b_ratio=0.2, gamma_ratio=0.2, weather_dim=3, fixed_customers=False, embedding_dim=128, epochs=100, batch_size=32, lr=0.0001, baseline_lr=0.001, entropy_weight=0.01, max_steps=100, inference='beam', num_samples=16, beam_width=3, test_size=100, cuda=False, mps=False, seed=42, save_dir='checkpoints', load_model=None, test=False, log_interval=10, save_interval=20, reoptimization=False)
+2026-04-05 14:36:30,841 [INFO] Using device: cpu
+2026-04-05 14:36:30,841 [INFO] Customer features dimension: 24
+2026-04-05 14:36:30,841 [INFO] Vehicle features dimension: 2
+2026-04-05 14:36:31,278 [INFO] Starting training for 100 epochs
+2026-04-05 14:36:41,264 [INFO] Epoch 10/100 | Reward: -72.2106 | Policy Loss: -1812.4896 | Baseline Loss: 30485.3301 | Time: 1.02s
+2026-04-05 14:36:51,245 [INFO] Epoch 20/100 | Reward: -69.2460 | Policy Loss: -1396.4237 | Baseline Loss: 19644.3477 | Time: 1.04s
+2026-04-05 14:36:51,249 [INFO] Saved model to checkpoints/model_epoch_20
+2026-04-05 14:36:51,303 [INFO] Instance 1: Cost = 7.4299, Routes = [[17, 10, 9]]
+2026-04-05 14:36:51,470 [INFO] Instance 2: Cost = 7.4677, Routes = [[1, 2, 3]]
+2026-04-05 14:36:51,508 [INFO] Instance 3: Cost = 7.4399, Routes = [[14, 2, 10]]
+2026-04-05 14:36:51,545 [INFO] Instance 4: Cost = 7.4767, Routes = [[2, 14, 11]]
+2026-04-05 14:36:51,581 [INFO] Instance 5: Cost = 7.4467, Routes = [[11, 2, 7]]
+2026-04-05 14:36:51,759 [INFO] Evaluation completed. Mean reward: -7.4622
+2026-04-05 14:36:51,759 [INFO] Test reward: -7.4622
+2026-04-05 14:37:02,011 [INFO] Epoch 30/100 | Reward: -68.1931 | Policy Loss: -817.7812 | Baseline Loss: 10780.6318 | Time: 1.02s
+2026-04-05 14:37:12,323 [INFO] Epoch 40/100 | Reward: -71.5935 | Policy Loss: -69.4063 | Baseline Loss: 8713.3076 | Time: 1.03s
+2026-04-05 14:37:12,324 [INFO] Saved model to checkpoints/model_epoch_40
+2026-04-05 14:37:12,363 [INFO] Instance 1: Cost = 8.1959, Routes = [[0, 2, 7, 0]]
+2026-04-05 14:37:12,444 [INFO] Instance 2: Cost = 7.4166, Routes = [[15, 2, 5]]
+2026-04-05 14:37:12,480 [INFO] Instance 3: Cost = 8.2083, Routes = [[0, 8, 6, 0]]
+2026-04-05 14:37:12,515 [INFO] Instance 4: Cost = 7.4999, Routes = [[14, 18, 11]]
+2026-04-05 14:37:12,551 [INFO] Instance 5: Cost = 7.4530, Routes = [[17, 0, 0]]
+2026-04-05 14:37:12,724 [INFO] Evaluation completed. Mean reward: -7.7598
+2026-04-05 14:37:12,725 [INFO] Test reward: -7.7598
+2026-04-05 14:37:22,889 [INFO] Epoch 50/100 | Reward: -70.8795 | Policy Loss: -59.4441 | Baseline Loss: 7872.0225 | Time: 1.02s
+2026-04-05 14:37:33,209 [INFO] Epoch 60/100 | Reward: -71.0882 | Policy Loss: -368.3078 | Baseline Loss: 8406.9551 | Time: 1.03s
+2026-04-05 14:37:33,210 [INFO] Saved model to checkpoints/model_epoch_60
+2026-04-05 14:37:33,247 [INFO] Instance 1: Cost = 7.7160, Routes = [[15, 3, 0, 0]]
+2026-04-05 14:37:33,330 [INFO] Instance 2: Cost = 8.1293, Routes = [[3, 0, 0, 0]]
+2026-04-05 14:37:33,367 [INFO] Instance 3: Cost = 7.8077, Routes = [[16, 0, 0, 0]]
+2026-04-05 14:37:33,402 [INFO] Instance 4: Cost = 8.0165, Routes = [[2, 0, 0, 0]]
+2026-04-05 14:37:33,440 [INFO] Instance 5: Cost = 8.0631, Routes = [[3, 13, 4, 0]]
+2026-04-05 14:37:33,622 [INFO] Evaluation completed. Mean reward: -7.9076
+2026-04-05 14:37:33,622 [INFO] Test reward: -7.9076
+2026-04-05 14:37:44,067 [INFO] Epoch 70/100 | Reward: -70.7289 | Policy Loss: -355.6884 | Baseline Loss: 7404.8994 | Time: 1.06s
+2026-04-05 14:37:54,603 [INFO] Epoch 80/100 | Reward: -70.1372 | Policy Loss: -254.3082 | Baseline Loss: 7578.5249 | Time: 1.06s
+2026-04-05 14:37:54,605 [INFO] Saved model to checkpoints/model_epoch_80
+2026-04-05 14:37:54,644 [INFO] Instance 1: Cost = 7.2554, Routes = [[5, 0, 0, 0]]
+2026-04-05 14:37:54,722 [INFO] Instance 2: Cost = 7.5798, Routes = [[8, 0, 0, 0]]
+2026-04-05 14:37:54,759 [INFO] Instance 3: Cost = 7.4859, Routes = [[6, 0, 0, 0]]
+2026-04-05 14:37:54,796 [INFO] Instance 4: Cost = 7.5731, Routes = [[3, 0, 0, 0]]
+2026-04-05 14:37:54,833 [INFO] Instance 5: Cost = 7.4522, Routes = [[5, 0, 0, 0]]
+2026-04-05 14:37:55,015 [INFO] Evaluation completed. Mean reward: -7.5360
+2026-04-05 14:37:55,016 [INFO] Test reward: -7.5360
+2026-04-05 14:38:05,628 [INFO] Epoch 90/100 | Reward: -72.3571 | Policy Loss: -346.0146 | Baseline Loss: 7512.8091 | Time: 1.09s
+2026-04-05 14:38:16,377 [INFO] Epoch 100/100 | Reward: -74.8390 | Policy Loss: -443.0327 | Baseline Loss: 9462.0879 | Time: 1.10s
+2026-04-05 14:38:16,379 [INFO] Saved model to checkpoints/model_epoch_100
+2026-04-05 14:38:16,417 [INFO] Instance 1: Cost = 7.3604, Routes = [[2, 0, 0, 0]]
+2026-04-05 14:38:16,499 [INFO] Instance 2: Cost = 6.4974, Routes = [[19, 18, 0, 0]]
+2026-04-05 14:38:16,537 [INFO] Instance 3: Cost = 7.0685, Routes = [[6, 0, 0, 0]]
+2026-04-05 14:38:16,574 [INFO] Instance 4: Cost = 7.4135, Routes = [[5, 0, 0, 0]]
+2026-04-05 14:38:16,612 [INFO] Instance 5: Cost = 7.3124, Routes = [[7, 0, 0, 0]]
+2026-04-05 14:38:16,797 [INFO] Evaluation completed. Mean reward: -7.1504
+2026-04-05 14:38:16,797 [INFO] Test reward: -7.1504
+2026-04-05 14:38:16,798 [INFO] Saved final model to checkpoints/model_final
+2026-04-05 14:38:16,879 [INFO] Training completed
+2026-04-05 14:38:16,879 [INFO] Evaluating model with beam inference strategy
+2026-04-05 14:38:16,915 [INFO] Instance 1: Cost = 7.0484, Routes = [[11, 0, 0, 0]]
+2026-04-05 14:38:16,991 [INFO] Instance 2: Cost = 7.0149, Routes = [[8, 0, 0, 0]]
+2026-04-05 14:38:17,029 [INFO] Instance 3: Cost = 6.8976, Routes = [[12, 0, 0, 0]]
+2026-04-05 14:38:17,065 [INFO] Instance 4: Cost = 7.1276, Routes = [[7, 0, 0, 0]]
+2026-04-05 14:38:17,101 [INFO] Instance 5: Cost = 7.4233, Routes = [[5, 0, 0, 0]]
+2026-04-05 14:38:20,525 [INFO] Evaluation completed. Mean reward: -7.0219
+2026-04-05 14:38:20,525 [INFO] Final evaluation - Mean reward: -7.0219

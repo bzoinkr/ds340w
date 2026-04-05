@@ -279,10 +279,10 @@ def main():
     torch.manual_seed(args.seed)
     np.random.seed(args.seed)
     
-    # Determine device
+    # Determine device (priority: CUDA > MPS > CPU)
     if args.cuda and torch.cuda.is_available():
         device = torch.device('cuda')
-    elif args.mps and torch.backends.mps.is_available():
+    elif torch.backends.mps.is_available():
         device = torch.device('mps')
     else:
         device = torch.device('cpu')
